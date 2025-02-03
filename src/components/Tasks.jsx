@@ -8,7 +8,12 @@ export default function Tasks(props) {
             <li 
                 key={task.id} 
                 className="flex gap-2">
-                <button className="bg-slate-400 text-white p-2 rounded-md w-full text-left">{task.title}</button>
+                <button 
+                    onClick={() => props.onTaskClick(task.id)}
+                    className={`bg-slate-400 text-white p-2 rounded-md w-full text-left ${task.isCompleted && 'line-through'}`}>
+                    {task.title}
+                </button>
+
                 <button className="bg-slate-400 text-white p-2 rounded-md">  
                     <ChevronRightIcon /> 
                 </button>
