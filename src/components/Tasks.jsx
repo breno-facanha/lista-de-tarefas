@@ -9,18 +9,18 @@ export default function Tasks({tasks, onTaskClick, onDeleteTaskClick }) {
                 className="flex gap-2">
                 <button 
                     onClick={() => onTaskClick(task.id)}
-                    className={`bg-slate-400 text-white p-2 rounded-md w-full text-left ${task.isCompleted && 'line-through'}`}>
+                    className={`bg-slate-400 text-white p-2 rounded-md w-full text-left ${task.isCompleted && 'line-through'} cursor-pointer`}>
                     {task.title}
                 </button>
 
                 <button 
-                    className="bg-slate-400 text-white p-2 rounded-md">  
+                    className="bg-slate-400 text-white p-2 rounded-md cursor-pointer">  
                     <ChevronRightIcon /> 
                 </button>
 
                 <button
                     onClick={() => onDeleteTaskClick(task.id)} 
-                    className="bg-slate-400 text-white p-2 rounded-md">  
+                    className="bg-slate-400 text-white p-2 rounded-md cursor-pointer">  
                     <Trash2  /> 
                 </button>
             </li>
