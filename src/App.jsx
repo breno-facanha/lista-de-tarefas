@@ -42,7 +42,7 @@ function App() {
  
   return (
    <div className='bg-slate-500 w-full h-screen flex  flex-col items-center border gap-2 p-6'>
-    <div className='w-[500px] space-y-4'>
+    <div className='w-[400px] space-y-4'>
       <h1 className='text-3xl text-slate-100 font-bold text-center'>Gerenciador de Tarefas</h1>
       <AddTask />
       <Tasks 
