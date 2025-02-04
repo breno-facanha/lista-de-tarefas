@@ -20,7 +20,7 @@ export default function Tasks({tasks, onTaskClick, onDeleteTaskClick }) {
 
                 <button
                     onClick={() => onDeleteTaskClick(task.id)} 
-                    className="bg-slate-400 text-white p-2 rounded-md cursor-pointer">  
+                    className="bg-slate-400 text-red-800 p-2 rounded-md cursor-pointer">  
                     <Trash2  /> 
                 </button>
             </li>
