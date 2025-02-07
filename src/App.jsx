@@ -9,7 +9,7 @@ function App() {
     {
       id: 1,
       title: "Estudar Programação",
-      description: "Estudar: React com TaulwindCss",
+      description: "Estudar: React com TailwindCss",
       isCompleted: false,
     },
     {
